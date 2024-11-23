@@ -7,7 +7,7 @@ const images = [
     path: 'public/images/hero/dubai-skyline.jpg'
   },
   {
-    url: 'https://example.com/desert-safari.jpg',
+    url: 'https://images.pexels.com/photos/1370746/pexels-photo-1370746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     path: 'public/images/tours/desert-safari.jpg'
   }
   // Add more image download configurations
