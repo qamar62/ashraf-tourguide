@@ -7,7 +7,7 @@ const tours = [
     id: 1,
     title: 'Dubai City Tour',
     description: 'Explore the stunning modern architecture and rich cultural heritage of Dubai.',
-    image: '/dubai-city.jpg',
+    image: '/dubai.jpg',
     highlights: [
       'Burj Khalifa',
       'Dubai Mall',
@@ -31,7 +31,7 @@ const tours = [
     id: 3,
     title: 'Abu Dhabi City Tour',
     description: 'Discover the capital of UAE, featuring magnificent mosques, museums, and cultural landmarks.',
-    image: '/abu-dhabi-city.jpg',
+    image: '/abudhabi.jpg',
     highlights: [
       'Sheikh Zayed Mosque',
       'Louvre Museum',
@@ -47,6 +47,20 @@ const Tours = () => {
     threshold: 0.1,
   });
 
+  const handleBookNow = (tourTitle) => {
+    const formSection = document.getElementById('contact-form');
+    if (formSection) {
+      // Scroll to form
+      formSection.scrollIntoView({ behavior: 'smooth' });
+      
+      // Optionally, pre-fill tour name in form
+      const tourInput = document.getElementById('tour-interest');
+      if (tourInput) {
+        tourInput.value = tourTitle;
+      }
+    }
+  };
+
   return (
     <section id="tours" className="py-20 px-4 bg-gray-100">
       <div className="container mx-auto">
@@ -61,12 +75,12 @@ const Tours = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
             >
               <img 
                 src={tour.image} 
                 alt={tour.title} 
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-emerald-600">
@@ -79,12 +93,17 @@ const Tours = () => {
                   <h4 className="font-semibold text-emerald-700">Highlights:</h4>
                   <ul className="list-disc list-inside text-gray-700">
                     {tour.highlights.map((highlight, idx) => (
-                      <li key={idx}>{highlight}</li>
+                      <li key={idx} className="text-sm">{highlight}</li>
                     ))}
                   </ul>
                 </div>
-                <button className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded transition duration-300">
-                  Book Now
+                <button 
+                  onClick={() => handleBookNow(tour.title)}
+                  className="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-4 rounded-lg 
+                  transition duration-300 ease-in-out transform hover:scale-105 
+                  focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-50"
+                >
+                  Book This Tour
                 </button>
               </div>
             </motion.div>

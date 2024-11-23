@@ -1,0 +1,89 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+bower_components/
+
+# Production build directory
+/dist
+/build
+
+# Vite build output
+/dist
+/dist-ssr
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+~*
+
+# Compiled binary files
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Backup files
+*.backup
+*.bkp
+
+# Dependency lock files (optional, depending on preference)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Testing related
+/coverage
+*.lcov
+
+# Misc
+.cache/
+.parcel-cache/
+.next
+.nuxt
+.vercel
+.netlify
+.docusaurus
+
+# Webpack
+.webpack/
+.webpack-cache/
+
+# Electron
+dist-electron

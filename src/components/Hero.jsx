@@ -51,7 +51,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-5xl font-bold mb-4 text-amber-300"
           >
-            Explore Dubai & Abu Dhabi
+            Explore Dubai & Abu Dhabi Now
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -69,7 +69,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg hover:shadow-xl"
           >
-            Book Your Tour
+            Book Your Guide Or Tour
           </motion.button>
         </div>
         <div className="hidden md:block">

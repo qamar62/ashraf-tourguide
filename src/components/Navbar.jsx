@@ -30,7 +30,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="text-white text-2xl font-bold flex items-center">
           <span className="mr-2">🌍</span>
-          Ashraf Tours
+          Explore Dubai Now
         </div>
 
         {/* Mobile Menu Toggle */}
