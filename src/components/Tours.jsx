@@ -19,7 +19,7 @@ const tours = [
     id: 2,
     title: 'Desert Safari',
     description: 'Experience the thrill of Arabian desert with dune bashing, camel riding, and traditional entertainment.',
-    image: '/desert-safari.jpg',
+    image: 'https://images.pexels.com/photos/1370746/pexels-photo-1370746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     highlights: [
       'Dune Bashing',
       'Camel Riding',
