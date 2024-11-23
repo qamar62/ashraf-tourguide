@@ -17,7 +17,7 @@ const ContactForm = () => {
     isError: false,
   });
 
-  const WEBHOOK_URL = 'YOUR_WEBHOOK_URL_HERE'; // You'll replace this later
+  const WEBHOOK_URL = 'https://n8n.qamdm.xyz/webhook/5bd23879-0268-4eae-8de9-95a64a9a1e07'; // You'll replace this later
 
   const handleSubmit = async (e) => {
     e.preventDefault();
